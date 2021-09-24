@@ -17,6 +17,9 @@ window.onload =  function (){
     descer();
     setTimeout(parar, 500);
   });
+  document.querySelector ("#retry").addEventListener ("click", function () {
+    inicioJogo();
+  });
 }
 var personagemObj;
 
@@ -178,3 +181,5 @@ function parar(){
   personagemObj.velocidadeX = 0;
   personagemObj.velocidadeY = 0;
 }
+
+
