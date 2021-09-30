@@ -2,20 +2,20 @@ window.onload =  function (){
   inicioJogo();
   document.querySelector ("#direita").addEventListener ("click",function(){
     direita();
-    setTimeout(parar, 500);
+    setTimeout(parar, 2000);
   });
    document.querySelector ("#esquerda").addEventListener ("click",function(){
     esquerda();
-    setTimeout(parar, 500);
+    setTimeout(parar, 2000);
   }); 
   document.querySelector ("#subir").addEventListener ("click",function(){
     subir();
-    setTimeout(parar, 500);
+    setTimeout(parar, 2000);
    
   });
  document.querySelector ("#descer").addEventListener ("click",function(){
     descer();
-    setTimeout(parar, 500);
+    setTimeout(parar, 2000);
   });
   document.querySelector ("#retry").addEventListener ("click", function () {
    reload();
