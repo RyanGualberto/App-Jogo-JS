@@ -30,9 +30,9 @@ var pontos
 
 function inicioJogo(){
   areaJogo.start();
-  personagemObj = new componente("#f00", 10, 120, 25, 25); 
-  pontos = new componente ("#000", 0,40,  'consolas', '30px', 'texto');
-  //obstaculo = new componente('green',150,90,60,10);
+  personagemObj = new componente("yellow", 10, 120, 25, 25); 
+  pontos = new componente ("yellow", 0,40,  'consolas', '30px', 'texto');
+// obstaculo = new componente('brown',150,90,60,10);
 
 }
 let areaJogo = {
@@ -140,8 +140,8 @@ function contarIntervalo(n){
      minVazio = 50;
      maxVazio = 200;
      Vazio = Math.floor (Math.random()*(maxVazio-minVazio+1)+minVazio);
-     obstaculo.push( new componente('green',x,0,altura,10));
-     obstaculo.push( new componente('green',x,altura + Vazio, x - altura - Vazio,10));
+     obstaculo.push( new componente('#4b3621',x,0,altura,10));
+     obstaculo.push( new componente('#4b3621',x,altura + Vazio, x - altura - Vazio,10));
 
    }
    for(i = 0;i <  obstaculo.length; i++){
