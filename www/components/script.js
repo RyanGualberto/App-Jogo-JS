@@ -1,5 +1,25 @@
 window.onload =  function (){
   inicioJogo();
+
+  function config(){
+    let Tema = {
+      canvas : "url(http://4.bp.blogspot.com/-Z2W82Y9MQ8Y/UbTkttrmwJI/AAAAAAAAAco/1ITlWYfji1E/s640/Modelo_Fusion-sonic.jpg)",
+      body :"#0000FF" 
+    }
+
+    localStorage.setItem(Tema.JSON.stringfy(Tema));
+
+
+    let TemaD = {
+      canvas : "url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da033e72-0c02-4f60-a051-5fbf5205e7e8/d2uolv5-34388794-cda3-4698-a432-327f020d3e49.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RhMDMzZTcyLTBjMDItNGY2MC1hMDUxLTVmYmY1MjA1ZTdlOFwvZDJ1b2x2NS0zNDM4ODc5NC1jZGEzLTQ2OTgtYTQzMi0zMjdmMDIwZDNlNDkuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zQTrsdfP575Sa01y1adtCnWmmk0QN-pJvpr4coNLQdI)",
+      body : "red"
+    }
+    localStorage.setItem(TemaD.JSON.stringfy(TemaD));
+  }
+
+
+
+  }
   document.querySelector ("#direita").addEventListener ("click",function(){
     direita();
     setTimeout(parar, 2000);
@@ -20,6 +40,7 @@ window.onload =  function (){
   document.querySelector ("#retry").addEventListener ("click", function () {
    reload();
   });
+
 }
 var personagemObj;
 

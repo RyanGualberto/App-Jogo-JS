@@ -1,8 +1,9 @@
 /**/
-
+ 
 canvas {
   background-image: url("https://image.freepik.com/vetores-gratis/plano-de-fundo-detalhado-da-selva_52683-62631.jpg");
   width: 100%;
+  opacity: 100%;
 }
  button { 
    background-color: green;
