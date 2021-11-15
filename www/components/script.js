@@ -4,16 +4,17 @@ window.onload =  function (){
    function config(){
 
       let Tema = {
-      canvas : "url(http://4.bp.blogspot.com/-Z2W82Y9MQ8Y/UbTkttrmwJI/AAAAAAAAAco/1ITlWYfji1E/s640/Modelo_Fusion-sonic.jpg)",
-      body :"#0000FF" 
+      canvas : "url(http://junkerhq.net/xrgb/images/f/f5/Scroll.gif)",
+      body :"white" 
     }
 
     localStorage.setItem("Tema",JSON.stringify(Tema));
 
 
     let TemaD = {
-      canvas : "url(https://virtualbackgrounds.site/wp-content/uploads/2020/07/super-mario-bros-level-ending.jpg)",
-      body : "red"
+      canvas : "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIAgE12ZQpuAG2Vqiktbhn2t_NX8ZbctKf7A&usqp=CAU)",
+      body : "white"
+    
     }
     localStorage.setItem("TemaD",JSON.stringify(TemaD));
   
@@ -24,6 +25,7 @@ window.onload =  function (){
      let temas = JSON.parse(localStorage.getItem("Tema"));
      document.querySelector("canvas").style.backgroundImage = temas.canvas;
      document.querySelector("body").style.backgroundColor = temas.body;
+     document.querySelector("personagemObj").style.backgroundColor = temas.personagemObj;
    });
 
    document.querySelector ("#TemaD").addEventListener("click",function(){
